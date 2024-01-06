@@ -1,0 +1,19 @@
+name: Verification de la synthaxe
+
+on:
+  # Déclencher le workflow sur les PRs lorsqu'un fichier Java est modifié.
+  pull_request:
+    paths:
+      - '**.java'
+
+jobs:
+  java-linter:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout du code
+        uses: actions/checkout@main
+
+      - name: Execution du script Python de validation du code Java
+        run: python linter.py "**/*.java"
+        id: validation
