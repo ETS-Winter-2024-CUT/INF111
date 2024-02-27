@@ -4,7 +4,7 @@ package Cours_1;
  * Ce programme illustre l'utilisation des castings entre les types float et int,
  * ainsi qu'entre les types int et byte.
  */
-public class Exercice9_CastFloatInt {
+public class Exercice_9_CastFloatInt {
     /**
      * Méthode principale du programme.
      * Démontre l'utilisation des castings entre float et int, et entre int et byte.
