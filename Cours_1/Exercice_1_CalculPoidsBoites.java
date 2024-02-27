@@ -3,7 +3,7 @@ package Cours_1;
 import java.util.Scanner;
 
 /**
- * Ce programme calcule le poids total des boîtes en fonction du poids d'un article 
+ * Ce programme calcule le poids total des boîtes en fonction du poids d'un article
  * et du nombre de boîtes.
  */
 public class Exercice_1_CalculPoidsBoites {

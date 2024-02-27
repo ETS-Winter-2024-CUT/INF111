@@ -11,8 +11,8 @@ public class Exercice_6_VariableByte {
 
     /**
      * Méthode principale du programme.
-     * Initialise une variable de type byte avec une valeur initiale, puis incrémente cette valeur 
-     * plusieurs fois.
+     * Initialise une variable de type byte avec une valeur initiale,
+     * puis incrémente cette valeur plusieurs fois.
      * Affiche les valeurs à chaque étape.
      *
      * @param args Les arguments de la ligne de commande (non utilisés dans ce programme)

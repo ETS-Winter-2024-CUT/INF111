@@ -3,7 +3,7 @@ package Cours_1;
 import java.util.Scanner;
 
 /**
- * Ce programme calcule le prix total hors taxes en fonction du prix d'un produit 
+ * Ce programme calcule le prix total hors taxes en fonction du prix d'un produit
  * et de la quantité vendue.
  */
 public class Exercice_2_PrixTotalHorsTaxes {

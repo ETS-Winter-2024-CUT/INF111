@@ -8,7 +8,7 @@ import java.util.Scanner;
 public class Exercice_3_CalculSurfaceCercle {
     /**
      * Méthode principale du programme.
-     * Permet à l'utilisateur d'entrer la mesure du rayon d'un cercle, 
+     * Permet à l'utilisateur d'entrer la mesure du rayon d'un cercle,
      * puis calcule la surface du cercle.
      *
      * @param args Les arguments de la ligne de commande (non utilisés dans ce programme)

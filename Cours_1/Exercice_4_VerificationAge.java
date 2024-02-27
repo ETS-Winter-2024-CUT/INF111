@@ -8,7 +8,7 @@ import java.util.Scanner;
 public class Exercice_4_VerificationAge {
     /**
      * Méthode principale du programme.
-     * Permet à l'utilisateur d'entrer l'âge d'une personne, 
+     * Permet à l'utilisateur d'entrer l'âge d'une personne,
      * puis détermine si elle est majeure ou mineure.
      *
      * @param args Les arguments de la ligne de commande (non utilisés dans ce programme)
