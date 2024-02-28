@@ -4,7 +4,17 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
+/**
+ * Ce programme permet à l'utilisateur d'entrer une série de nombres,
+ * puis effectue divers calculs sur ces nombres.
+ */
 public class Exercice_2_SerieNombres {
+    /**
+     * Méthode principale du programme.
+     * Demande à l'utilisateur d'entrer une série de nombres,
+     * puis effectue divers calculs sur ces nombres.
+     * @param args Les arguments de la ligne de commande (non utilisés dans ce programme)
+     */
     public static void main(String[] args) {
         String unInput; // Donnée introduite par l'utilisateur
         Scanner clavier;
