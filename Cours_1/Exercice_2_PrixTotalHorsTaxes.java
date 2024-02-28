@@ -25,7 +25,7 @@ public class Exercice_2_PrixTotalHorsTaxes {
 
         double prixHorsTaxes = prixProduit * quantiteVendue;
 
-        System.out.println("Le prix total hors taxes est : " + prixHorsTaxes + "$.");
+        System.out.printf("Le prix total hors taxes est : %.2f$.\n", prixHorsTaxes);
 
         scanner.close();
     }

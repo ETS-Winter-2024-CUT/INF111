@@ -25,7 +25,7 @@ public class Exercice_5_ComparaisonNombres {
         double somme = valeur1 + valeur2;
 
         // Affichage de la somme des deux valeurs
-        System.err.println("La somme des deux valeurs est : " + somme);
+        System.err.printf("La somme des deux valeurs est : %.2f\n", somme);
 
         scanner.close();
     }
