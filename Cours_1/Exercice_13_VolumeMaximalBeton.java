@@ -3,7 +3,7 @@ package Cours_1;
 import java.util.Scanner;
 
 /**
- * Ce programme calcule le volume maximal de béton pouvant être produit en fonction des quantités 
+ * Ce programme calcule le volume maximal de béton pouvant être produit en fonction des quantités
  * de ciment, de sable et de gravier disponibles.
  */
 public class Exercice_13_VolumeMaximalBeton {
@@ -14,7 +14,7 @@ public class Exercice_13_VolumeMaximalBeton {
 
     /**
      * Méthode principale du programme.
-     * Permet à l'utilisateur d'entrer les quantités de ciment, de sable et de gravier disponibles, 
+     * Permet à l'utilisateur d'entrer les quantités de ciment, de sable et de gravier disponibles,
      * puis calcule le volume maximal de béton pouvant être produit et l'affiche.
      * @param args Les arguments de la ligne de commande (non utilisés dans ce programme)
      */
@@ -30,13 +30,13 @@ public class Exercice_13_VolumeMaximalBeton {
         System.out.print("Entrez la quantité de gravier disponible (en kg) : ");
         double gravier = scanner.nextDouble();
 
-        // Calcul du volume maximal de béton pouvant être produit en prenant le minimum des rapports 
+        // Calcul du volume maximal de béton pouvant être produit en prenant le minimum des rapports
         // des quantités disponibles aux quantités minimales requises pour chaque composant
-        double volumeMaximal = Math.min(ciment / MIN_CIMENT, 
+        double volumeMaximal = Math.min(ciment / MIN_CIMENT,
                 Math.min(sable / MIN_SABLE, gravier / MIN_GRAVIER));
 
         // Affichage du volume maximal de béton
-        System.out.printf("Le volume maximale de béton qui peut être produit est : %.2f m^3.\n", 
+        System.out.printf("Le volume maximale de béton qui peut être produit est : %.2f m^3.\n",
                 volumeMaximal);
 
         scanner.close();
