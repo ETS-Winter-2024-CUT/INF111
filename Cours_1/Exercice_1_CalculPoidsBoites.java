@@ -20,7 +20,7 @@ public class Exercice_1_CalculPoidsBoites {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Entrez le poids d'un article (en kilogrammes) : ");
+        System.out.print("Entrez le poids d'un article : ");
         double poidsArticle = scanner.nextDouble();
 
         System.out.print("Entrez le nombre de boîtes : ");
@@ -28,7 +28,7 @@ public class Exercice_1_CalculPoidsBoites {
 
         double poidsBoites = poidsArticle * NOMBRE_ARTICLES_PAR_BOITE * nombreBoites;
 
-        System.out.println("Le poids total des boîtes est : " + poidsBoites + " kilogrammes.");
+        System.out.printf("Le poids total des boîtes est : %.2f\n", poidsBoites);
 
         scanner.close();
     }

@@ -22,7 +22,7 @@ public class Exercice_3_CalculSurfaceCercle {
         // Calcul de la surface du cercle en utilisant la formule : surface = π * rayon^2
         double surface = Math.PI * Math.pow(rayon, 2);
 
-        System.out.println("La surface du cercle est : " + surface + ".");
+        System.out.printf("La surface du cercle est : %.2f\n", surface);
 
         scanner.close();
     }
