@@ -32,10 +32,12 @@ public class Exercice_13_VolumeMaximalBeton {
 
         // Calcul du volume maximal de béton pouvant être produit en prenant le minimum des rapports 
         // des quantités disponibles aux quantités minimales requises pour chaque composant
-        double volumeMaximal = Math.min(ciment / MIN_CIMENT, Math.min(sable / MIN_SABLE, gravier / MIN_GRAVIER));
+        double volumeMaximal = Math.min(ciment / MIN_CIMENT, 
+                Math.min(sable / MIN_SABLE, gravier / MIN_GRAVIER));
 
         // Affichage du volume maximal de béton
-        System.out.printf("Le volume maximale de béton qui peut être produit est : %.2f m^3.\n", volumeMaximal);
+        System.out.printf("Le volume maximale de béton qui peut être produit est : %.2f m^3.\n", 
+                volumeMaximal);
 
         scanner.close();
     }

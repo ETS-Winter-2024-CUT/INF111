@@ -3,13 +3,13 @@ package Cours_1;
 import java.util.Scanner;
 
 /**
- * Ce programme permet de calculer le volume d'un cylindre en fonction de la mesure de son rayon 
+ * Ce programme permet de calculer le volume d'un cylindre en fonction de la mesure de son rayon
  * et de sa hauteur.
  */
 public class Exercice_11_CalculVolumeCylindre {
     /**
      * Méthode principale du programme.
-     * Permet à l'utilisateur d'entrer la mesure du rayon et de la hauteur d'un cylindre, 
+     * Permet à l'utilisateur d'entrer la mesure du rayon et de la hauteur d'un cylindre,
      * puis calcule son volume et l'affiche.
      * @param args Les arguments de la ligne de commande (non utilisés dans ce programme)
      */

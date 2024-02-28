@@ -8,7 +8,7 @@ import java.util.Scanner;
 public class Exercice_10_ConversionTemperature {
     /**
      * Méthode principale du programme.
-     * Permet à l'utilisateur d'entrer une température en degrés Celsius, puis convertit cette 
+     * Permet à l'utilisateur d'entrer une température en degrés Celsius, puis convertit cette
      * température en degrés Fahrenheit et l'affiche.
      * @param args Les arguments de la ligne de commande (non utilisés dans ce programme)
      */

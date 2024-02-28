@@ -3,7 +3,7 @@ package Cours_1;
 import java.util.Scanner;
 
 /**
- * Ce programme permet de convertir une durée donnée en secondes en un format d'heure, minute 
+ * Ce programme permet de convertir une durée donnée en secondes en un format d'heure, minute
  * et seconde.
  */
 public class Exercice_12_ConversionDuree {
@@ -12,7 +12,7 @@ public class Exercice_12_ConversionDuree {
 
     /**
      * Méthode principale du programme.
-     * Permet à l'utilisateur d'entrer une durée en secondes, 
+     * Permet à l'utilisateur d'entrer une durée en secondes,
      * puis convertit cette durée en un format d'heure, minute et seconde et l'affiche.
      * @param args Les arguments de la ligne de commande (non utilisés dans ce programme)
      */
