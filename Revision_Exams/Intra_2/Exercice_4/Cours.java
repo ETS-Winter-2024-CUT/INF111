@@ -1,11 +1,11 @@
-package Revision_Exams.Intra_2;
+package Revision_Exams.Intra_2.Exercice_4;
 
 /**
  * Cette classe représente un cours universitaire avec un sigle, un nombre de crédits
  * et une indication sur sa présence au programme.
  */
-public class Exercice_4_Cours {
-    private String sigle;
+public class Cours {
+    private final String sigle;
     private int nbCredits;
     private boolean auProgramme;
 
@@ -16,7 +16,7 @@ public class Exercice_4_Cours {
      * @param nbCredits   Le nombre de crédits du cours.
      * @param auProgramme Indique si le cours est au programme.
      */
-    public Exercice_4_Cours(String sigle, int nbCredits, boolean auProgramme) {
+    public Cours(String sigle, int nbCredits, boolean auProgramme) {
         this.sigle = sigle;
         this.nbCredits = nbCredits;
         this.auProgramme = auProgramme;
@@ -28,7 +28,7 @@ public class Exercice_4_Cours {
      *
      * @param sigle Le sigle du cours.
      */
-    public Exercice_4_Cours(String sigle) {
+    public Cours(String sigle) {
         this(sigle, 3, true);
     }
 
