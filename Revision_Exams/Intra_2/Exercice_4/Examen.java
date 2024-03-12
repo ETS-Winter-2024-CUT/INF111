@@ -1,8 +1,6 @@
-package Revision_Exams.Intra_2.Exercice_5;
+package Revision_Exams.Intra_2.Exercice_4;
 
 import java.util.Date;
-
-import Revision_Exams.Intra_2.Exercice_4.Cours;
 
 /**
  * Cette classe représente un examen associé à un cours.
