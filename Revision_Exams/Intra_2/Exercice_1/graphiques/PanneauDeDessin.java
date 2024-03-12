@@ -35,5 +35,4 @@ public class PanneauDeDessin extends JPanel {
     public void setGCercle(CercleGraphique gCercle) {
         this.gCercle = gCercle;
     }
-
 }
