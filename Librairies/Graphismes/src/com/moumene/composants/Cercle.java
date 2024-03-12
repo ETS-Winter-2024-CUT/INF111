@@ -1,4 +1,4 @@
-package Librairies.Graphismes.src.com.moumene.composant;
+package Librairies.Graphismes.src.com.moumene.composants;
 
 import Librairies.Graphismes.src.com.moumene.graphiques.Point;
 

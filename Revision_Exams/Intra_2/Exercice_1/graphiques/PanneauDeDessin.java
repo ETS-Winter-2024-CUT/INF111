@@ -1,4 +1,4 @@
-package Revision_Exams.Intra_2.Exercice_1;
+package Revision_Exams.Intra_2.Exercice_1.graphiques;
 
 import java.awt.Graphics;
 

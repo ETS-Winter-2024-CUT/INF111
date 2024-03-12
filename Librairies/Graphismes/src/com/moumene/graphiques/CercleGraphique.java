@@ -3,7 +3,7 @@ package Librairies.Graphismes.src.com.moumene.graphiques;
 import java.awt.Color;
 import java.awt.Graphics;
 
-import Librairies.Graphismes.src.com.moumene.composant.Cercle;
+import Librairies.Graphismes.src.com.moumene.composants.Cercle;
 
 /**
  * Represente l'objet graphique Cercle

@@ -1,4 +1,4 @@
-package Revision_Exams.Intra_2.Exercice_1;
+package Revision_Exams.Intra_2.Exercice_1.composants;
 
 public class Rectangle {
     private final double longueur;

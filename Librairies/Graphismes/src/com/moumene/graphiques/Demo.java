@@ -6,7 +6,8 @@ package Librairies.Graphismes.src.com.moumene.graphiques;
 
 import java.awt.Color;
 import javax.swing.JFrame;
-import Librairies.Graphismes.src.com.moumene.composant.Cercle;
+
+import Librairies.Graphismes.src.com.moumene.composants.Cercle;
 
 /**
  *
