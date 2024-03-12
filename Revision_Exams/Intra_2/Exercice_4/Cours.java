@@ -66,6 +66,7 @@ public class Cours {
      */
     @Override
     public String toString() {
-        return "Sigle: " + sigle + ", Nombre de crédits: " + nbCredits + (auProgramme ? ", est" : ", n'est pas") + " au programme.";
+        return "Sigle: " + sigle + ", Nombre de crédits: " + nbCredits
+            + (auProgramme ? ", est" : ", n'est pas") + " au programme.";
     }
 }
