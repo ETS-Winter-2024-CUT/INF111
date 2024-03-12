@@ -9,12 +9,12 @@ public class Main {
         Cours coursB = new Cours("INF111");
 
         for (int i = 0; i < 4; i++) {
-            Examen nouvExamen = new Examen("idk", new Date(), 0.15, coursA);
+            Examen nouvExamen = new Examen(TypeExamen.TEST, new Date(), 0.15, coursA);
             unEtudiant.ajouterExamen(nouvExamen);
         }
 
         for (int i = 0; i < 2; i++) {
-            Examen nouvExamen = new Examen("idk", new Date(), 0.1, coursB);
+            Examen nouvExamen = new Examen(TypeExamen.TEST, new Date(), 0.1, coursB);
             unEtudiant.ajouterExamen(nouvExamen);
         }
 

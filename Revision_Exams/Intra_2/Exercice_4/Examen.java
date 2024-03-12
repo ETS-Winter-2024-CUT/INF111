@@ -6,7 +6,7 @@ import java.util.Date;
  * Cette classe représente un examen associé à un cours.
  */
 public class Examen {
-    private String typeExamen;
+    private TypeExamen typeExamen;
     private double note;
     private Date dateExamen;
     private double ponderation;
@@ -21,7 +21,7 @@ public class Examen {
      * @param ponderation La pondération de l'examen.
      * @param cours       Le cours associé à l'examen.
      */
-    public Examen(String typeExamen, double note, Date dateExamen, double ponderation, Cours cours) {
+    public Examen(TypeExamen typeExamen, double note, Date dateExamen, double ponderation, Cours cours) {
         this.typeExamen = typeExamen;
         this.note = note;
         this.dateExamen = dateExamen;
@@ -37,7 +37,7 @@ public class Examen {
      * @param ponderation La pondération de l'examen.
      * @param cours       Le cours associé à l'examen.
      */
-    public Examen(String typeExamen, Date dateExamen, double ponderation, Cours cours) {
+    public Examen(TypeExamen typeExamen, Date dateExamen, double ponderation, Cours cours) {
         this(typeExamen, -1, dateExamen, ponderation, cours);
     }
 
@@ -46,7 +46,7 @@ public class Examen {
      *
      * @return Le type d'examen.
      */
-    public String getTypeExamen() {
+    public TypeExamen getTypeExamen() {
         return typeExamen;
     }
 
