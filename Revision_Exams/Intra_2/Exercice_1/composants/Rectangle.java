@@ -1,17 +1,22 @@
 package Revision_Exams.Intra_2.Exercice_1.composants;
 
+import Revision_Exams.Intra_2.Exercice_1.graphiques.Point;
+
 public class Rectangle {
     private final double longueur;
     private final double largeur;
+
+    private Point origine;
     private boolean visible = true;
 
-    public Rectangle(double longueur, double largeur) {
+    public Rectangle(Point origine, double longueur, double largeur) {
+        this.origine = origine;
         this.longueur = longueur;
         this.largeur = largeur;
     }
 
-    Rectangle(double longueur) {
-        this(longueur, longueur);
+    public Rectangle(Point origine, double longueur) {
+        this(origine, longueur, longueur);
     }
 
     public boolean isVisible() {
@@ -32,6 +37,14 @@ public class Rectangle {
 
     public double getSurface() {
         return largeur * longueur;
+    }
+
+    public Point getOrigine() {
+        return origine;
+    }
+
+    public void setOrigine(Point origine) {
+        this.origine = origine;
     }
 
     public String toString() {

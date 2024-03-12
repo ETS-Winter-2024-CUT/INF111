@@ -23,7 +23,10 @@ public class RectangleGraphique extends FigureGraphique {
         if (!visible)
             return;
 
+        int x = (int) rectangle.getOrigine().getAbscisse();
+        int y = (int) rectangle.getOrigine().getOrdonnee();
+
         g.setColor(getCouleur());
-        g.drawRect(0, 0, (int) rectangle.getLongueur(), (int) rectangle.getLargeur());
+        g.drawRect(x, y, (int) rectangle.getLongueur(), (int) rectangle.getLargeur());
     }
 }

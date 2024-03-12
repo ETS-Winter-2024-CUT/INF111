@@ -31,7 +31,7 @@ public class Demo {
         CercleGraphique gCercle = new CercleGraphique(unCercle, Color.RED);
         unDessin.ajouterFigure(gCercle);
 
-        Rectangle unRectangle = new Rectangle(100.0f, 50.0f);
+        Rectangle unRectangle = new Rectangle(new Point(200, 300), 100);
         RectangleGraphique gRectangle = new RectangleGraphique(unRectangle, Color.BLUE);
         unDessin.ajouterFigure(gRectangle);
 
