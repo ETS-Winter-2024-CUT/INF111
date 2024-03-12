@@ -11,7 +11,7 @@ public abstract class FigureGraphique {
 
     /**
      * Constructeur pour initialiser une figure graphique avec une couleur.
-     * 
+     *
      * @param couleur La couleur de la figure
      */
     FigureGraphique(Color couleur) {
@@ -20,14 +20,14 @@ public abstract class FigureGraphique {
 
     /**
      * Méthode abstraite pour dessiner la figure graphique.
-     * 
+     *
      * @param g Le contexte graphique où dessiner la figure
      */
     public abstract void dessine(Graphics g);
 
     /**
      * Obtient la couleur de la figure.
-     * 
+     *
      * @return La couleur de la figure
      */
     public Color getCouleur() {

@@ -17,7 +17,7 @@ public class Point {
 
 	/**
 	 * Constructeur pour initialiser un point avec des coordonnées spécifiques.
-	 * 
+	 *
 	 * @param a L'abscisse du point
 	 * @param o L'ordonnée du point
 	 */
@@ -28,7 +28,7 @@ public class Point {
 
 	/**
 	 * Constructeur pour initialiser un point avec une abscisse spécifique et une ordonnée à 0.
-	 * 
+	 *
 	 * @param a L'abscisse du point
 	 */
 	public Point(double a) {
@@ -38,7 +38,7 @@ public class Point {
 
 	/**
 	 * Obtient l'abscisse du point.
-	 * 
+	 *
 	 * @return L'abscisse du point
 	 */
 	public double getAbscisse() {
@@ -47,7 +47,7 @@ public class Point {
 
 	/**
 	 * Obtient l'ordonnée du point.
-	 * 
+	 *
 	 * @return L'ordonnée du point
 	 */
 	public double getOrdonnee() {
@@ -63,7 +63,7 @@ public class Point {
 
 	/**
 	 * Définit une nouvelle valeur pour l'abscisse du point.
-	 * 
+	 *
 	 * @param newAbs La nouvelle valeur de l'abscisse
 	 */
 	public void setAbscisse(double newAbs) {
@@ -72,7 +72,7 @@ public class Point {
 
 	/**
 	 * Définit une nouvelle valeur pour l'ordonnée du point.
-	 * 
+	 *
 	 * @param newOrd La nouvelle valeur de l'ordonnée
 	 */
 	public void setOrdonnee(double newOrd) {
@@ -81,7 +81,7 @@ public class Point {
 
 	/**
 	 * Calcule la distance entre ce point et un autre point spécifié.
-	 * 
+	 *
 	 * @param p Le point à mesurer la distance
 	 * @return La distance entre ce point et le point spécifié
 	 */
@@ -95,7 +95,7 @@ public class Point {
 
 	/**
 	 * Compare ce point à un autre objet et vérifie s'ils sont égaux.
-	 * 
+	 *
 	 * @param p L'objet à comparer
 	 * @return true si les deux objets sont égaux, sinon false
 	 */
@@ -115,7 +115,7 @@ public class Point {
 
 	/**
 	 * Retourne une représentation sous forme de chaîne de caractères du point.
-	 * 
+	 *
 	 * @return Une chaîne de caractères représentant le point
 	 */
 	public String toString() {

@@ -15,7 +15,7 @@ public class RectangleGraphique extends FigureGraphique {
 
     /**
      * Constructeur pour initialiser un RectangleGraphique avec un rectangle et une couleur.
-     * 
+     *
      * @param rectangle Le rectangle à représenter graphiquement
      * @param couleur   La couleur du rectangle
      */
@@ -25,9 +25,9 @@ public class RectangleGraphique extends FigureGraphique {
     }
 
     /**
-     * Constructeur pour initialiser un RectangleGraphique avec un rectangle 
+     * Constructeur pour initialiser un RectangleGraphique avec un rectangle
      * et une couleur par défaut (rouge).
-     * 
+     *
      * @param rectangle Le rectangle à représenter graphiquement
      */
     public RectangleGraphique(Rectangle rectangle) {
@@ -36,7 +36,7 @@ public class RectangleGraphique extends FigureGraphique {
 
     /**
      * Méthode pour dessiner le rectangle graphiquement sur un contexte graphique donné.
-     * 
+     *
      * @param g Le contexte graphique où dessiner le rectangle
      */
     public void dessine(Graphics g) {
