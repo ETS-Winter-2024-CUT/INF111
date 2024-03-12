@@ -5,7 +5,7 @@ public class Rectangle {
     private final double largeur;
     private boolean visible = true;
 
-    Rectangle(double longueur, double largeur) {
+    public Rectangle(double longueur, double largeur) {
         this.longueur = longueur;
         this.largeur = largeur;
     }
@@ -20,6 +20,14 @@ public class Rectangle {
 
     public void setVisible(boolean visible) {
         this.visible = visible;
+    }
+
+    public double getLargeur() {
+        return this.largeur;
+    }
+
+    public double getLongueur() {
+        return this.longueur;
     }
 
     public double getSurface() {
