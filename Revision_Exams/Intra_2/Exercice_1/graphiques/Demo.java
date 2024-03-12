@@ -2,12 +2,12 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package Librairies.Graphismes.src.com.moumene.graphiques;
+package Revision_Exams.Intra_2.Exercice_1.graphiques;
 
 import java.awt.Color;
 import javax.swing.JFrame;
 
-import Librairies.Graphismes.src.com.moumene.composants.Cercle;
+import Revision_Exams.Intra_2.Exercice_1.composants.Cercle;
 
 /**
  *

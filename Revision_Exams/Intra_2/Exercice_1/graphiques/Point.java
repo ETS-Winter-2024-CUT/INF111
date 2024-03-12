@@ -1,5 +1,5 @@
 //Fichier : Point.java
-package Librairies.Graphismes.src.com.moumene.graphiques;
+package Revision_Exams.Intra_2.Exercice_1.graphiques;
 
 public class Point {
 	private double abscisse, ordonnee;

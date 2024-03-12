@@ -1,6 +1,6 @@
-package Librairies.Graphismes.src.com.moumene.composants;
+package Revision_Exams.Intra_2.Exercice_1.composants;
 
-import Librairies.Graphismes.src.com.moumene.graphiques.Point;
+import Revision_Exams.Intra_2.Exercice_1.graphiques.Point;
 
 /**
  * Représente un objet Cercle avec les données du cercle
