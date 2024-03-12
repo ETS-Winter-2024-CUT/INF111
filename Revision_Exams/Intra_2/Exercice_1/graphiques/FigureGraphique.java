@@ -10,6 +10,9 @@ public abstract class FigureGraphique {
         this.couleur = couleur;
     }
 
-    public abstract void dessine(Graphics g) {
+    public abstract void dessine(Graphics g);
+
+    public Color getCouleur() {
+        return this.couleur;
     }
 }

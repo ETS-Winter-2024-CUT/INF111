@@ -3,31 +3,27 @@ package Revision_Exams.Intra_2.Exercice_1.graphiques;
 import java.awt.Color;
 import java.awt.Graphics;
 
-public class RectangleGraphique {
-    private Color couleur;
-    private double largeur;
-    private double longueur;
+import Revision_Exams.Intra_2.Exercice_1.composants.Rectangle;
 
-    public RectangleGraphique(double longueur, double largeur, Color couleur) {
-        this.longueur = longueur;
-        this.largeur = largeur;
-        this.couleur = couleur;
+public class RectangleGraphique extends FigureGraphique {
+    private Rectangle rectangle;
+
+    private boolean visible = true;
+
+    public RectangleGraphique(Rectangle rectangle, Color couleur) {
+        super(couleur);
+        this.rectangle = rectangle;
     }
 
-    public RectangleGraphique(double longueur) {
-        this(longueur, longueur, Color.RED);
-    }
-
-    public RectangleGraphique(double longueur, Color couleur) {
-        this(longueur, longueur, couleur);
-    }
-
-    public RectangleGraphique(double longueur, double largeur) {
-        this(longueur, largeur, Color.RED);
+    public RectangleGraphique(Rectangle rectangle) {
+        this(rectangle, Color.RED);
     }
 
     public void dessine(Graphics g) {
-        g.setColor(couleur);
-        g.drawRect(0, 0, (int) largeur, (int) longueur);
+        if (!visible)
+            return;
+
+        g.setColor(getCouleur());
+        g.drawRect(0, 0, (int) rectangle.getLongueur(), (int) rectangle.getLargeur());
     }
 }
