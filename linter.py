@@ -42,7 +42,7 @@ def verify_javadoc(filename: str, lines: list[str]):
 
     # Définir le motif regex qui correspond au Javadoc
     pattern = (r"/\*\*(?:.|\n)*?\*/")   # Correction du motif regex pour correspondre au Javadoc
-    
+
     header_comment = re.search(pattern, rest_of_code, re.DOTALL)
 
     if header_comment:
@@ -56,9 +56,10 @@ def verify_ruler(filename: str, lines: list[str], ruler: int) -> bool:
     success_status = True
 
     for index, line in enumerate(lines):
-        line_lenght = len(line.strip())
+        clean_line = line.strip()
+        line_lenght = len(clean_line)
 
-        if line_lenght > ruler:
+        if line_lenght > ruler and not clean_line.endswith('{'):
             success_status = False
             print_error(filename, index, f"Ligne trop longue ({line_lenght} > {ruler}).")
 
