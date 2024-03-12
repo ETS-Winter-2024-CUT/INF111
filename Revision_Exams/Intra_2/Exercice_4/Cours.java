@@ -1,7 +1,8 @@
 package Revision_Exams.Intra_2.Exercice_4;
 
 /**
- * Cette classe représente un cours universitaire avec un sigle, un nombre de crédits
+ * Cette classe représente un cours universitaire avec un sigle, un nombre de
+ * crédits
  * et une indication sur sa présence au programme.
  */
 public class Cours {
@@ -53,20 +54,22 @@ public class Cours {
     /**
      * Méthode permettant de définir si le cours est au programme ou non.
      *
-     * @param auProgramme Une valeur booléenne indiquant la présence ou non du cours au programme.
+     * @param auProgramme Une valeur booléenne indiquant la présence ou non du cours
+     *                    au programme.
      */
     public void setAuProgramme(boolean auProgramme) {
         this.auProgramme = auProgramme;
     }
 
     /**
-     * Méthode permettant de représenter le cours sous forme de chaîne de caractères.
+     * Méthode permettant de représenter le cours sous forme de chaîne de
+     * caractères.
      *
      * @return Une représentation textuelle du cours.
      */
     @Override
     public String toString() {
-        return "Sigle: " + sigle + ", Nombre de crédits: " + nbCredits
-            + (auProgramme ? ", est" : ", n'est pas") + " au programme.";
+        return String.format("Sigle: %s, Nombre de crédits: %d, Le cours %s au programme",
+                sigle, nbCredits, (auProgramme ? "est" : "n'est pas"));
     }
 }

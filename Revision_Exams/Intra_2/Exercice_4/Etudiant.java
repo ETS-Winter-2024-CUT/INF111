@@ -55,33 +55,33 @@ public class Etudiant {
         return true;
     }
 
-    public double calculMoyenne() {
+    public double calculMoyenne(String sigle) {
         double moyenne = 0;
 
-        for (Examen examen : examens) {
-            moyenne += examen.getNote() * examen.getPonderation();
-        }
+        for (Examen examen : examens)
+            if (examen.sigleCours().equals(sigle))
+                moyenne += examen.getNote() * examen.getPonderation();
 
         moyenne /= (double) examens.size();
 
         return moyenne;
     }
 
-    public void afficheBulletin() {
+    public void afficheBulletin(String sigle) {
         System.out.println(this.toString());
 
-        for (Examen examen : examens) {
-            System.out.printf("%s - %lf - %s - %s - %lf\n",
-                    examen.getCours(), examen.getNote(), examen.getTypeExamen(),
-                    examen.getDateExamen(), examen.getPonderation());
-        }
+        for (Examen examen : examens)
+            if (examen.sigleCours().equals(sigle))
+                System.out.printf("%s - %.2f - %s - %s - %.2f\n",
+                        examen.getCours(), examen.getNote(), examen.getTypeExamen(),
+                        examen.getDateExamen(), examen.getPonderation());
 
-        System.out.println(calculMoyenne());
+        System.out.println(calculMoyenne(sigle));
     }
 
     @Override
     public String toString() {
-        return "Etudiant " + nom + "[codePermanent=" + codePermanent + ", courriel=" + courriel
-                + ", examens=" + examens + ", nombreExamens=" + nombreExamens + "]";
+        return String.format("Etudiant %s: [code: %s, courriel: %s, nombre examens: %d]",
+                nom, codePermanent, courriel, nombreExamens);
     }
 }
