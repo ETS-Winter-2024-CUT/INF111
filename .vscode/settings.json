@@ -1,7 +1,9 @@
 {
-    "editor.rulers": [
-        100
-    ],
+    "[java]": {
+        "editor.rulers": [
+            100
+        ]
+    },
     "editor.tabSize": 4,
     "editor.insertSpaces": true,
     "editor.formatOnSave": true,
