@@ -2,7 +2,15 @@ package Revision_Exams.Intra_2.Exercice_3;
 
 import Revision_Exams.Intra_2.Exercice_3.Exceptions.*;
 
+/**
+ * Cette classe représente une application de test pour la gestion de comptes bancaires.
+ */
 public class CompteApp {
+    /**
+     * Méthode principale permettant de tester les opérations sur un compte bancaire.
+     *
+     * @param args Les arguments de la ligne de commande (non utilisés dans cette application)
+     */
     public static void main(String[] args) {
         // Création d'un compte bancaire
         CompteBancaire compte = new CompteBancaire("123456789", 2000);

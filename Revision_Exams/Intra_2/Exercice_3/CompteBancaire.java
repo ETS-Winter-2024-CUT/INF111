@@ -2,22 +2,34 @@ package Revision_Exams.Intra_2.Exercice_3;
 
 import Revision_Exams.Intra_2.Exercice_3.Exceptions.*;
 
+/**
+ * Cette classe représente un compte bancaire avec des fonctionnalités de retrait et de virement.
+ */
 public class CompteBancaire {
+    /**
+     * La limite maximale pour un virement.
+     */
     public static final double MAX_VIREMENT = 1000;
 
     private String numCompte;
     private double solde;
 
+    /**
+     * Constructeur de la classe CompteBancaire.
+     *
+     * @param numCompte Le numéro de compte.
+     * @param solde     Le solde initial du compte.
+     */
     public CompteBancaire(String numCompte, double solde) {
         this.numCompte = numCompte;
         this.solde = solde;
     }
 
     /**
-     * Fait le retrait de montant et lance l'exception
-     * SoldeInsuffisantException si le solde est insuffisant
+     * Effectue un retrait du montant spécifié.
      *
-     * @param montant
+     * @param montant Le montant à retirer.
+     * @throws SoldeInsuffisantException Si le solde est insuffisant pour effectuer le retrait.
      */
     public void retrait(double montant) throws SoldeInsuffisantException {
         if (solde < montant)
@@ -27,11 +39,13 @@ public class CompteBancaire {
     }
 
     /**
-     * Fait (simule) un virement vers un compte destinatiare,
-     * lance l'exception SoldeInsuffisantException si le solde est insuffisant,
-     * et l'exception LimiteDepasseeException si le montant est plus que MAX_VIREMENT
+     * Effectue un virement vers un compte destinataire.
      *
-     * @param montant
+     * @param montant          Le montant à virer.
+     * @param cmptDestinataire Le numéro de compte destinataire.
+     * @throws SoldeInsuffisantException Si le solde est insuffisant pour effectuer
+     *                                   le virement.
+     * @throws LimiteDepasseeException   Si le montant excède la limite de virement.
      */
     public void virement(double montant, String cmptDestinataire)
             throws SoldeInsuffisantException, LimiteDepasseeException {
@@ -39,7 +53,7 @@ public class CompteBancaire {
             throw new SoldeInsuffisantException("Solde insuffisant!");
 
         if (montant > MAX_VIREMENT)
-            throw new LimiteDepasseeException("Limite de virement dépassé!");
+            throw new LimiteDepasseeException("Limite de virement dépassée!");
 
         // On évite les virements vers soi-même
         if (cmptDestinataire.equals(numCompte))
