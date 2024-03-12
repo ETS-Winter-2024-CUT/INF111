@@ -1,5 +1,6 @@
 package Revision_Exams.Intra_2.Exercice_1.graphiques;
 
+import java.awt.Graphics;
 import java.util.ArrayList;
 
 public class Dessin {
@@ -11,11 +12,21 @@ public class Dessin {
         this.listeFigures = listeFigures;
     }
 
+    Dessin(String nom) {
+        this(nom, new ArrayList<>());
+    }
+
     public void ajouterFigure(FigureGraphique figure) {
         this.listeFigures.add(figure);
     }
 
-    public void dessine() {
+    public void dessine(Graphics g) {
+        for (FigureGraphique figure : listeFigures) {
+            figure.dessine(g);
+        }
+    }
 
+    public String toString() {
+        return this.nom;
     }
 }

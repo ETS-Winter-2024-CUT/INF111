@@ -25,13 +25,17 @@ public class Demo {
         PanneauDeDessin panneau = new PanneauDeDessin();
         panneau.setBackground(new Color(1.0f, 1.0f, 0.9f, 1.0f));
 
+        Dessin unDessin = new Dessin("Un dessin");
+
         Cercle unCercle = new Cercle(new Point(300, 200), 50);
         CercleGraphique gCercle = new CercleGraphique(unCercle, Color.RED);
+        unDessin.ajouterFigure(gCercle);
 
-        Rectangle unRectangle = new Rectangle(1.0f, 2.0f);
+        Rectangle unRectangle = new Rectangle(100.0f, 50.0f);
         RectangleGraphique gRectangle = new RectangleGraphique(unRectangle, Color.BLUE);
+        unDessin.ajouterFigure(gRectangle);
 
-        panneau.setGCercle(gCercle);
+        panneau.setDessin(unDessin);
 
         fen.add(panneau);
 
