@@ -43,8 +43,7 @@ public class CompteBancaire {
      *
      * @param montant          Le montant à virer.
      * @param cmptDestinataire Le numéro de compte destinataire.
-     * @throws SoldeInsuffisantException Si le solde est insuffisant pour effectuer
-     *                                   le virement.
+     * @throws SoldeInsuffisantException Si le solde est insuffisant pour effectuer le virement.
      * @throws LimiteDepasseeException   Si le montant excède la limite de virement.
      */
     public void virement(double montant, String cmptDestinataire)
