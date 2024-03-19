@@ -2,8 +2,11 @@ package Cours_10.Exercice_1;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
+import java.awt.Component;
 import java.awt.FlowLayout;
 import java.awt.GridLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -110,6 +113,36 @@ public class CalculatriceLayout {
 
         p2Chiffres.setBorder(new javax.swing.border.LineBorder(Color.YELLOW, 2));
         p2Ouest.setBorder(new javax.swing.border.LineBorder(Color.YELLOW, 1));
+
+        ActionListener clicChiffre = new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                JButton button = (JButton) e.getSource();
+                String buttonText = button.getText();
+                String displayText = p2Affichage.getText();
+                if (displayText.equals("0.") || displayText.equals("0")) {
+                    p2Affichage.setText(buttonText);
+                } else {
+                    p2Affichage.setText(displayText + buttonText);
+                }
+            }
+        };
+
+        ActionListener effacer = new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                p2Affichage.setText("0.");
+            }
+        };
+
+        for (Component composant : p2Chiffres.getComponents()) {
+            if (composant instanceof JButton) {
+                JButton button = (JButton) composant;
+                if (Character.isDigit(button.getText().charAt(0)) || button.getText().equals(".")) {
+                    button.addActionListener(clicChiffre);
+                }
+            }
+        }
+
+        p2C.addActionListener(effacer);
 
         // Disposition dans la fenetre principale
         fen.add(p1Nord, BorderLayout.NORTH);
